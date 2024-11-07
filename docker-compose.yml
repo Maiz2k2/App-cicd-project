@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  web:
+    image: "${DOCKER_REPO}/${IMAGE_NAME}:${IMAGE_TAG}" 
+    ports:
+      - "8083:8080"
