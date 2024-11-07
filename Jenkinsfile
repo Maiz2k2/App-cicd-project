@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "practice-app"
-        DOCKER_REPO = "maizmazin"
+        DOCKER_REPO = "maiz2k2"
         IMAGE_TAG = "${BUILD_ID}"  
     }
 
