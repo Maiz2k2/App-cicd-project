@@ -27,7 +27,7 @@ pipeline {
                     sh "docker tag ${DOCKER_REPO}/${IMAGE_NAME}:${IMAGE_TAG} ${env.dockerHubUser}/${IMAGE_NAME}:${IMAGE_TAG}"
                     sh "docker push ${env.dockerHubUser}/${IMAGE_NAME}:${IMAGE_TAG}"
                     echo 'Image Pushed to Docker Hub'
-                    echo "${IMAGE_TAG}"
+                    sh "echo ${IMAGE_TAG}"
                 }
             }
         }
