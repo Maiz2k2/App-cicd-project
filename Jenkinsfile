@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage("code") {
             steps {
-                git url: "https://github.com/Mazin2k2/django-notes-app.git", branch: "main"
+                git url: "https://github.com/Maiz2k2/App-cicd-project.git", branch: "main"
                 echo 'Code Cloned'
             }
         }
